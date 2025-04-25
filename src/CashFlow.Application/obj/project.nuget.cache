@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/M6tp99mXzA=",
+  "success": true,
+  "projectFilePath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Application/CashFlow.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/van-gomes/.nuget/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
