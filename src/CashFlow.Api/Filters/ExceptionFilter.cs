@@ -9,7 +9,7 @@ public class ExceptionFilter : IExceptionFilter
 {
     public void OnException(ExceptionContext context)
     {
-        if(context.Exception is CashFlowException)
+        if (context.Exception is CashFlowException)
         {
             HandleProjectException(context);
         }
@@ -21,7 +21,7 @@ public class ExceptionFilter : IExceptionFilter
 
     private void HandleProjectException(ExceptionContext context)
     {
-        if(context.Exception is ErrorOnValidationException)
+        if (context.Exception is ErrorOnValidationException)
         {
             var ex = (ErrorOnValidationException)context.Exception;
 
