@@ -1,4 +1,5 @@
 using CashFlow.Api.Filters;
+using CashFlow.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,15 +11,13 @@ builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)))
 
 var app = builder.Build();
 
-app.UseStaticFiles();
-
-app.UseSwagger();
-
-app.UseSwaggerUI(options =>
+if (app.Environment.IsDevelopment())
 {
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "CastFlow API v1");
-    options.RoutePrefix = "";
-});
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseMiddleware<CultureMiddleware>();
 
 app.UseHttpsRedirection();
 
