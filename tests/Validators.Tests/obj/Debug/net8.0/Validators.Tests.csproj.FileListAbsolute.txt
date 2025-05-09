@@ -1,7 +1,0 @@
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_Validators.Tests
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/obj/Debug/net8.0/Validators.Tests.csproj.AssemblyReference.cache
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/obj/Debug/net8.0/Validators.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/obj/Debug/net8.0/Validators.Tests.AssemblyInfoInputs.cache
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/obj/Debug/net8.0/Validators.Tests.AssemblyInfo.cs
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/obj/Debug/net8.0/Validators.Tests.csproj.CoreCompileInputs.cache
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/obj/Debug/net8.0/Validators.Tests.sourcelink.json
