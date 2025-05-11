@@ -2,10 +2,36 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Bogus/35.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Bogus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Bogus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "coverlet.collector/6.0.0": {
         "type": "package",
         "build": {
           "build/netstandard1.0/coverlet.collector.targets": {}
+        }
+      },
+      "FluentAssertions/8.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "FluentValidation/12.0.0-preview1": {
@@ -522,10 +548,50 @@
         "runtime": {
           "bin/placeholder/CashFlow.Exception.dll": {}
         }
+      },
+      "CommonTestUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Bogus": "35.6.3",
+          "CashFlow.Communication": "1.0.0",
+          "Microsoft.NET.Test.Sdk": "17.8.0",
+          "NUnit": "3.14.0",
+          "NUnit.Analyzers": "3.9.0",
+          "NUnit3TestAdapter": "4.5.0",
+          "coverlet.collector": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommonTestUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonTestUtilities.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Bogus/35.6.3": {
+      "sha512": "+5omfZWy8gOcbpc48vKfMI4h/ecbdf3NQm6xCl3zMbaP4J3rMMm5h3kPFeIWBgt4mbz6YY0eeZDLR/6yv1khKw==",
+      "type": "package",
+      "path": "bogus/35.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "bogus.128.png",
+        "bogus.35.6.3.nupkg.sha512",
+        "bogus.nuspec",
+        "lib/net40/Bogus.dll",
+        "lib/net40/Bogus.xml",
+        "lib/net6.0/Bogus.dll",
+        "lib/net6.0/Bogus.xml",
+        "lib/netstandard1.3/Bogus.dll",
+        "lib/netstandard1.3/Bogus.xml",
+        "lib/netstandard2.0/Bogus.dll",
+        "lib/netstandard2.0/Bogus.xml"
+      ]
+    },
     "coverlet.collector/6.0.0": {
       "sha512": "tW3lsNS+dAEII6YGUX/VMoJjBS1QvsxqJeqLaJXub08y1FSjasFPtQ4UBUsudE9PNrzLjooClMsPtY2cZLdXpQ==",
       "type": "package",
@@ -577,6 +643,31 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.0.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "FluentAssertions/8.2.0": {
+      "sha512": "Gh4jkECcrR0i17ofCVqsiVz2+lxC+p5TYFPCrbZFi7eQQWGEZhvCDwvhycBKX1Kmtbd+H2CW/ugW7wdH9Br9NQ==",
+      "type": "package",
+      "path": "fluentassertions/8.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "FluentAssertions.png",
+        "LICENSE",
+        "fluentassertions.8.2.0.nupkg.sha512",
+        "fluentassertions.nuspec",
+        "lib/net47/FluentAssertions.dll",
+        "lib/net47/FluentAssertions.pdb",
+        "lib/net47/FluentAssertions.xml",
+        "lib/net6.0/FluentAssertions.dll",
+        "lib/net6.0/FluentAssertions.pdb",
+        "lib/net6.0/FluentAssertions.xml",
+        "lib/netstandard2.0/FluentAssertions.dll",
+        "lib/netstandard2.0/FluentAssertions.pdb",
+        "lib/netstandard2.0/FluentAssertions.xml",
+        "lib/netstandard2.1/FluentAssertions.dll",
+        "lib/netstandard2.1/FluentAssertions.pdb",
+        "lib/netstandard2.1/FluentAssertions.xml"
       ]
     },
     "FluentValidation/12.0.0-preview1": {
@@ -1272,11 +1363,18 @@
       "type": "project",
       "path": "../../src/CashFlow.Exception/CashFlow.Exception.csproj",
       "msbuildProject": "../../src/CashFlow.Exception/CashFlow.Exception.csproj"
+    },
+    "CommonTestUtilities/1.0.0": {
+      "type": "project",
+      "path": "../CommonTestUtilities/CommonTestUtilities.csproj",
+      "msbuildProject": "../CommonTestUtilities/CommonTestUtilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "CashFlow.Application >= 1.0.0",
+      "CommonTestUtilities >= 1.0.0",
+      "FluentAssertions >= 8.2.0",
       "Microsoft.NET.Test.Sdk >= 17.13.0",
       "NUnit >= 3.14.0",
       "NUnit.Analyzers >= 3.9.0",
@@ -1313,6 +1411,9 @@
           "projectReferences": {
             "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Application/CashFlow.Application.csproj": {
               "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Application/CashFlow.Application.csproj"
+            },
+            "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/CommonTestUtilities/CommonTestUtilities.csproj": {
+              "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/CommonTestUtilities/CommonTestUtilities.csproj"
             }
           }
         }
@@ -1333,6 +1434,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "FluentAssertions": {
+            "target": "Package",
+            "version": "[8.2.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.13.0, )"

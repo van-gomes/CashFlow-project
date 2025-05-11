@@ -11,6 +11,7 @@
 
     <ItemGroup>
         <PackageReference Include="coverlet.collector" Version="6.0.0" />
+        <PackageReference Include="FluentAssertions" Version="8.2.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
         <PackageReference Include="NUnit" Version="3.14.0" />
         <PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
@@ -28,6 +29,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\src\CashFlow.Application\CashFlow.Application.csproj" />
+      <ProjectReference Include="..\CommonTestUtilities\CommonTestUtilities.csproj" />
     </ItemGroup>
 
 </Project>

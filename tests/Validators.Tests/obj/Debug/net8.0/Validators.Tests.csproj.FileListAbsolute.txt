@@ -115,3 +115,9 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/pt-PT/CashFlow.Exception.resources.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/pt-BR/CashFlow.Exception.resources.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/fr/CashFlow.Exception.resources.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/CommonTestUtilities.deps.json
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/CommonTestUtilities.runtimeconfig.json
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/Bogus.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/FluentAssertions.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/CommonTestUtilities.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/tests/Validators.Tests/bin/Debug/net8.0/CommonTestUtilities.pdb
