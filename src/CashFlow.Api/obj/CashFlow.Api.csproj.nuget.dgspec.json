@@ -34,9 +34,6 @@
               },
               "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Exception/CashFlow.Exception.csproj": {
                 "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Exception/CashFlow.Exception.csproj"
-              },
-              "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Infrastructure/CashFlow.Infrastructure.csproj": {
-                "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Infrastructure/CashFlow.Infrastructure.csproj"
               }
             }
           }
@@ -209,7 +206,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Infrastructure/CashFlow.Infrastructure.csproj": {
+                "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Infrastructure/CashFlow.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

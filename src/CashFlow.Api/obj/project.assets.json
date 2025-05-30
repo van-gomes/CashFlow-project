@@ -1125,6 +1125,9 @@
       "CashFlow.Communication/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CashFlow.Infrastructure": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/CashFlow.Communication.dll": {}
         },
@@ -3330,7 +3333,6 @@
       "CashFlow.Application >= 1.0.0",
       "CashFlow.Communication >= 1.0.0",
       "CashFlow.Exception >= 1.0.0",
-      "CashFlow.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.10",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -3368,9 +3370,6 @@
             },
             "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Exception/CashFlow.Exception.csproj": {
               "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Exception/CashFlow.Exception.csproj"
-            },
-            "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Infrastructure/CashFlow.Infrastructure.csproj": {
-              "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow/src/CashFlow.Infrastructure/CashFlow.Infrastructure.csproj"
             }
           }
         }
