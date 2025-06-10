@@ -9,7 +9,7 @@ public class CashFlowDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        var connectionString = "Server=localhost;Database=cashFlowdb;User ID=;Password=;TrustServerCertificate=True;";
+        var connectionString = "Server=localhost;Database=cashFlowdb;User ID=sa;Password=;TrustServerCertificate=True;";
         optionsBuilder.UseSqlServer(connectionString);
     }
 }

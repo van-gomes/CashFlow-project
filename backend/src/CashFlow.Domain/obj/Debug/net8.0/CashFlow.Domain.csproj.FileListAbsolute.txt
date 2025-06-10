@@ -22,3 +22,15 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/backend/src/CashFlow.Domain/obj/Debug/net8.0/refint/CashFlow.Domain.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/backend/src/CashFlow.Domain/obj/Debug/net8.0/CashFlow.Domain.pdb
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/backend/src/CashFlow.Domain/obj/Debug/net8.0/ref/CashFlow.Domain.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/bin/Debug/net8.0/CashFlow.Domain.deps.json
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/bin/Debug/net8.0/CashFlow.Domain.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/bin/Debug/net8.0/CashFlow.Domain.pdb
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/obj/Debug/net8.0/CashFlow.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/obj/Debug/net8.0/CashFlow.Domain.AssemblyInfoInputs.cache
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/obj/Debug/net8.0/CashFlow.Domain.AssemblyInfo.cs
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/obj/Debug/net8.0/CashFlow.Domain.csproj.CoreCompileInputs.cache
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/obj/Debug/net8.0/CashFlow.Domain.sourcelink.json
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/obj/Debug/net8.0/CashFlow.Domain.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/obj/Debug/net8.0/refint/CashFlow.Domain.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/obj/Debug/net8.0/CashFlow.Domain.pdb
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Domain/obj/Debug/net8.0/ref/CashFlow.Domain.dll
