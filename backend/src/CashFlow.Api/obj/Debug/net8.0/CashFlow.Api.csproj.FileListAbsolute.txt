@@ -265,3 +265,6 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/CashFlow.Api.pdb
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/CashFlow.Api.genruntimeconfig.cache
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/ref/CashFlow.Api.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
