@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1VYAkkaYgMQ=",
+  "dgSpecHash": "6Zo3Qr9DFP8=",
   "success": true,
   "projectFilePath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/Validators.Tests.csproj",
   "expectedPackageFiles": [
+    "/home/van-gomes/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/bogus/35.6.3/bogus.35.6.3.nupkg.sha512",
@@ -12,7 +14,7 @@
     "/home/van-gomes/.nuget/packages/fluentvalidation/12.0.0-preview1/fluentvalidation.12.0.0-preview1.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.codecoverage/17.13.0/microsoft.codecoverage.17.13.0.nupkg.sha512",
-    "/home/van-gomes/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.data.sqlclient/5.1.5/microsoft.data.sqlclient.5.1.5.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.1.1/microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.entityframeworkcore/8.0.5/microsoft.entityframeworkcore.8.0.5.nupkg.sha512",
