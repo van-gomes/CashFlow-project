@@ -10,6 +10,7 @@ namespace CashFlow.Api.Controllers;
 [ApiController]
 public class ExpensesController : ControllerBase
 {
+    
     [HttpPost]
     [ProducesResponseType(typeof(ResponseRegisteredExpenseJson), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
@@ -21,7 +22,6 @@ public class ExpensesController : ControllerBase
 
         return Created(string.Empty, response);
     }
-    
     [HttpGet]
     [ProducesResponseType(typeof(ResponseRegisteredExpenseJson), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -29,7 +29,7 @@ public class ExpensesController : ControllerBase
     {
         var response = await useCase.Execute();
 
-        if (response.Expenses.Count != 0)
+        if (response.Expenses.GetHashCode() != 0)
             return Ok(response);
 
         return NoContent();
