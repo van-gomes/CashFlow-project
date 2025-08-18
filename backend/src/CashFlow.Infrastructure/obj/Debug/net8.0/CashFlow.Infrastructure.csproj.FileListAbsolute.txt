@@ -52,3 +52,5 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Infrastructure/obj/Debug/net8.0/CashFlow.Infrastructure.pdb
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Infrastructure/obj/Debug/net8.0/CashFlow.Infrastructure.genruntimeconfig.cache
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Infrastructure/obj/Debug/net8.0/ref/CashFlow.Infrastructure.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Infrastructure/bin/Debug/net8.0/AutoMapper.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Infrastructure/bin/Debug/net8.0/AutoMapper.xml

@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.5",
-          "Microsoft.Extensions.Configuration": "10.0.0-preview.6.25358.103"
+          "Microsoft.Extensions.Configuration": "10.0.0-preview.6.25358.103",
+          "AutoMapper": "12.0.0.0"
         },
         "runtime": {
           "CashFlow.Infrastructure.dll": {}
@@ -941,6 +942,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "AutoMapper/12.0.0.0": {
+        "runtime": {
+          "AutoMapper.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.0"
+          }
+        }
       }
     }
   },
@@ -1491,6 +1500,11 @@
     },
     "CashFlow.Domain/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoMapper/12.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
