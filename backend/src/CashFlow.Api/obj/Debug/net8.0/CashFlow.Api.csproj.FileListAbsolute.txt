@@ -178,7 +178,6 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/backend/src/CashFlow.Api/obj/Debug/net8.0/ref/CashFlow.Api.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/appsettings.Development.json
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/appsettings.json
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/CashFlow.Api.staticwebassets.endpoints.json
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/CashFlow.Api
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/CashFlow.Api.deps.json
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/CashFlow.Api.runtimeconfig.json
@@ -252,9 +251,7 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/scopedcss/bundle/CashFlow.Api.styles.css
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets.build.json
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets.development.json
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets/msbuild.CashFlow.Api.Microsoft.AspNetCore.StaticWebAssets.props
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets/msbuild.CashFlow.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets/msbuild.build.CashFlow.Api.props
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.CashFlow.Api.props
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.CashFlow.Api.props
@@ -270,3 +267,6 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/AutoMapper.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/bin/Debug/net8.0/CashFlow.Api.staticwebassets.endpoints.json
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Api/obj/Debug/net8.0/staticwebassets/msbuild.CashFlow.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
