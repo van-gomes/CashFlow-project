@@ -16,9 +16,9 @@ internal class ExpensesRepository : IExpensesRepository
     {
         await _dbContext.Expenses.AddAsync(expense);
     }
-
+    
     public async Task<List<Expense>> GetAll()
     {
-        return await _dbContext.Expenses.ToListAsync();
+        return await _dbContext.Expenses.AsNoTracking().ToListAsync();
     }
 }
