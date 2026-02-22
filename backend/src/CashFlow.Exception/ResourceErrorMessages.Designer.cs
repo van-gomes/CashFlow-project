@@ -15,8 +15,7 @@ namespace CashFlow.Exception {
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class ResourceErrorMessages {
-        public static string unknownError;
-
+        
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
@@ -45,16 +44,16 @@ namespace CashFlow.Exception {
                 resourceCulture = value;
             }
         }
-        
-        internal static string unknownError_ {
+
+        public static string unknownError {
             get {
-                return ResourceManager.GetString("unknownError ", resourceCulture);
+                return ResourceManager.GetString("unknownError", resourceCulture);
             }
         }
 
-        public static string titleRequired_ {
+        public static string titleRequired {
             get {
-                return ResourceManager.GetString("titleRequired ", resourceCulture);
+                return ResourceManager.GetString("titleRequired", resourceCulture);
             }
         }
 
@@ -73,6 +72,12 @@ namespace CashFlow.Exception {
         public static string amountMustBeGreaterThanZero {
             get {
                 return ResourceManager.GetString("amountMustBeGreaterThanZero", resourceCulture);
+            }
+        }
+
+        public static string expenseNotFound {
+            get {
+                return ResourceManager.GetString("expenseNotFound", resourceCulture);
             }
         }
     }

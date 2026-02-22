@@ -63,15 +63,21 @@ namespace CashFlow.Exception {
             }
         }
         
-        internal static string titleRequired_ {
+        internal static string expenseNotFound {
             get {
-                return ResourceManager.GetString("titleRequired ", resourceCulture);
+                return ResourceManager.GetString("expenseNotFound", resourceCulture);
             }
         }
         
-        internal static string unknownError_ {
+        internal static string titleRequired {
             get {
-                return ResourceManager.GetString("unknownError ", resourceCulture);
+                return ResourceManager.GetString("titleRequired", resourceCulture);
+            }
+        }
+        
+        internal static string unknownError {
+            get {
+                return ResourceManager.GetString("unknownError", resourceCulture);
             }
         }
     }

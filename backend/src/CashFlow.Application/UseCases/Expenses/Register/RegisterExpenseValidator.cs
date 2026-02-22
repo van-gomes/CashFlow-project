@@ -8,7 +8,7 @@ public class RegisterExpenseValidator : AbstractValidator<RequestRegisterExpense
 {
     public RegisterExpenseValidator()
     {
-        RuleFor(expense => expense.Title).NotEmpty().WithMessage(ResourceErrorMessages.titleRequired_);
+        RuleFor(expense => expense.Title).NotEmpty().WithMessage(ResourceErrorMessages.titleRequired);
         RuleFor(expense => expense.Amount).GreaterThan(0)
             .WithMessage(ResourceErrorMessages.amountMustBeGreaterThanZero);
         RuleFor(expense => expense.Date).LessThanOrEqualTo(DateTime.UtcNow)

@@ -27,10 +27,13 @@
     <data name="paymentTypeInvalid" xml:space="preserve">
         <value>O tipo de pagamento não é valido</value>
     </data>
-    <data name="titleRequired " xml:space="preserve">
-        <value>O título é obrigatório</value>
+    <data name="expenseNotFound" xml:space="preserve">
+        <value>Despesa não encontrada.</value>
     </data>
-    <data name="unknownError " xml:space="preserve">
-        <value>Erro desconhecido</value>
+    <data name="titleRequired" xml:space="preserve">
+        <value>O título é obrigatório.</value>
+    </data>
+    <data name="unknownError" xml:space="preserve">
+        <value>Erro desconhecido.</value>
     </data>
 </root>
