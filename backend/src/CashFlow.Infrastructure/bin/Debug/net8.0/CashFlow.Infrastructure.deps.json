@@ -941,6 +941,17 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        },
+        "resources": {
+          "pt-BR/CashFlow.Domain.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "pt-pt/CashFlow.Domain.resources.dll": {
+            "locale": "pt-pt"
+          },
+          "fr/CashFlow.Domain.resources.dll": {
+            "locale": "fr"
+          }
         }
       },
       "AutoMapper/12.0.0.0": {
