@@ -244,8 +244,7 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/bin/Debug/net8.0/CashFlow.Communication.pdb
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/bin/Debug/net8.0/CashFlow.Domain.pdb
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/bin/Debug/net8.0/CashFlow.Infrastructure.pdb
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/bin/Debug/net8.0/pt-BR/CashFlow.Domain.resources.dll
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/bin/Debug/net8.0/pt-pt/CashFlow.Domain.resources.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/bin/Debug/net8.0/pt-PT/CashFlow.Domain.resources.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/bin/Debug/net8.0/fr/CashFlow.Domain.resources.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/obj/Debug/net8.0/CommonTestUtilities.csproj.AssemblyReference.cache
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/obj/Debug/net8.0/CommonTestUtilities.GeneratedMSBuildEditorConfig.editorconfig
