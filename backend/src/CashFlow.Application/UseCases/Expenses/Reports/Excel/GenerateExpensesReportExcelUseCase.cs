@@ -1,3 +1,4 @@
+using CashFlow.Domain.Reports;
 using ClosedXML.Excel;
 
 namespace CashFlow.Application.UseCases.Expenses.Register.Reports.Excel;
