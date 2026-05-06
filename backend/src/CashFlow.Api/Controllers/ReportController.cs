@@ -1,5 +1,6 @@
 using System.Net.Mime;
 using CashFlow.Application.UseCases.Expenses.Register.Reports.Excel;
+using CashFlow.Application.UseCases.Expenses.Register.Reports.PDF;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CashFlow.Api.Controllers;
@@ -22,4 +23,20 @@ public class ReportController : ControllerBase
 
         return NoContent();
     }
+    
+    [HttpGet("pdf")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public async Task<IActionResult> GetPdf(
+        [FromServices] IGenerateExpensesReportPdfUseCase useCase,
+        [FromQuery] DateOnly month)
+    {
+        byte[] file = await useCase.Execute(month);
+
+        if (file.Length > 0)
+            return File(file, MediaTypeNames.Application.Pdf, "report.pdf");
+
+        return NoContent();
+    }
+    
 }
