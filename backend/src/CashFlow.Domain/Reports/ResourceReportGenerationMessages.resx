@@ -42,13 +42,13 @@
     <data name="debitCard" xml:space="preserve">
         <value>Debit Card</value>
     </data>
-    <data name="eletronic_Transfer" xml:space="preserve">
-        <value />
-    </data>
     <data name="eletronicTransfer" xml:space="preserve">
         <value>Eletronic Transfer</value>
     </data>
     <data name="expensesFor" xml:space="preserve">
         <value>Expenses for</value>
+    </data>
+    <data name="totalSpentIn" xml:space="preserve">
+        <value>Total spent in {0}</value>
     </data>
 </root>

@@ -1,48 +1,46 @@
 namespace CashFlow.Domain.Reports
 {
-    using System;
+    using System.Globalization;
+    using System.Resources;
 
-    public class ResourceReportGenerationMessages
+    public static class ResourceReportGenerationMessages
     {
-        private static System.Resources.ResourceManager resourceMan;
-        private static System.Globalization.CultureInfo resourceCulture;
+        private static readonly ResourceManager ResourceManager =
+            new(
+                "CashFlow.Domain.Reports.ResourceReportGenerationMessages",
+                typeof(ResourceReportGenerationMessages).Assembly);
 
-        internal ResourceReportGenerationMessages()
-        {
-        }
+        public static string title =>
+            ResourceManager.GetString(nameof(title), CultureInfo.CurrentCulture)!;
 
-        public static System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if (object.Equals(null, resourceMan))
-                {
-                    var temp = new System.Resources.ResourceManager(
-                        "CashFlow.Domain.Reports.ResourceReportGenerationMessages",
-                        typeof(ResourceReportGenerationMessages).Assembly);
+        public static string date =>
+            ResourceManager.GetString(nameof(date), CultureInfo.CurrentCulture)!;
 
-                    resourceMan = temp;
-                }
+        public static string paymentType =>
+            ResourceManager.GetString(nameof(paymentType), CultureInfo.CurrentCulture)!;
 
-                return resourceMan;
-            }
-        }
+        public static string amount =>
+            ResourceManager.GetString(nameof(amount), CultureInfo.CurrentCulture)!;
 
-        public static System.Globalization.CultureInfo Culture
-        {
-            get => resourceCulture;
-            set => resourceCulture = value;
-        }
+        public static string description =>
+            ResourceManager.GetString(nameof(description), CultureInfo.CurrentCulture)!;
 
-        public static string title => ResourceManager.GetString("title", resourceCulture);
-        public static string date => ResourceManager.GetString("date", resourceCulture);
-        public static string paymentType => ResourceManager.GetString("paymentType", resourceCulture);
-        public static string amount => ResourceManager.GetString("amount", resourceCulture);
-        public static string description => ResourceManager.GetString("description", resourceCulture);
-        public static string cach => ResourceManager.GetString("cach", resourceCulture);
-        public static string creditCard => ResourceManager.GetString("creditCard", resourceCulture);
-        public static string debitCard => ResourceManager.GetString("debitCard", resourceCulture);
-        public static string eletronicTransfer => ResourceManager.GetString("eletronicTransfer", resourceCulture);
-        public static string expensesFor => ResourceManager.GetString("expensesFor", resourceCulture);
+        public static string cach =>
+            ResourceManager.GetString(nameof(cach), CultureInfo.CurrentCulture)!;
+
+        public static string creditCard =>
+            ResourceManager.GetString(nameof(creditCard), CultureInfo.CurrentCulture)!;
+
+        public static string debitCard =>
+            ResourceManager.GetString(nameof(debitCard), CultureInfo.CurrentCulture)!;
+
+        public static string eletronicTransfer =>
+            ResourceManager.GetString(nameof(eletronicTransfer), CultureInfo.CurrentCulture)!;
+
+        public static string expensesFor =>
+            ResourceManager.GetString(nameof(expensesFor), CultureInfo.CurrentCulture)!;
+
+        public static string totalSpentIn =>
+            ResourceManager.GetString(nameof(totalSpentIn), CultureInfo.CurrentCulture)!;
     }
 }

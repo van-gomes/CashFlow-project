@@ -41,4 +41,7 @@
     <data name="expensesFor" xml:space="preserve">
         <value>Despesas de</value>
     </data>
+    <data name="totalSpentIn" xml:space="preserve">
+        <value>Total gasto em {0}</value>
+    </data>
 </root>

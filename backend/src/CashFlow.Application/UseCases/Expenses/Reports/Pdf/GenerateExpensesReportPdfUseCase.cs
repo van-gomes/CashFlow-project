@@ -29,6 +29,16 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
         var document = CreateDocument(month);
         var page = CreatePage(document);
 
+        var paragraph = page.AddParagraph();
+        var title = string.Format(ResourceReportGenerationMessages.totalSpentIn, month.ToString("Y"));
+
+        paragraph.AddFormattedText(title, new Font { Name = FontHelper.RALEWAY_REGULAR, Size = 15 });
+
+        paragraph.AddLineBreak();
+
+        var totalExpenses = expenses.Sum(expense => expense.Amount);
+        paragraph.AddFormattedText($"{totalExpenses} {CURRENCY_SYMBOL}", new Font { Name = FontHelper.WORKSANS_BLACK, Size = 50 });
+
         return [];
     }
 
@@ -37,7 +47,7 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
         var document = new Document();
 
         document.Info.Title = $"{ResourceReportGenerationMessages.expensesFor} {month:Y}";
-        document.Info.Author = "Welisson Arley";
+        document.Info.Author = "Vânia Gomes";
 
         var style = document.Styles["Normal"];
         style!.Font.Name = FontHelper.RALEWAY_REGULAR;

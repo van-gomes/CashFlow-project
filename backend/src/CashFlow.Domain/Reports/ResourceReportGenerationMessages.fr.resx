@@ -41,4 +41,7 @@
     <data name="expensesFor" xml:space="preserve">
         <value>Dépenses pour</value>
     </data>
+    <data name="totalSpentIn" xml:space="preserve">
+        <value>Total dépensé en {0}</value>
+    </data>
 </root>
