@@ -26,4 +26,19 @@
     <data name="title" xml:space="preserve">
         <value>Título</value>
     </data>
+    <data name="cach" xml:space="preserve">
+        <value>Dinheiro</value>
+    </data>
+    <data name="debitCard" xml:space="preserve">
+        <value>Cartão de débito</value>
+    </data>
+    <data name="creditCard" xml:space="preserve">
+        <value>Cartão de crédito</value>
+    </data>
+    <data name="eletronicTransfer" xml:space="preserve">
+        <value>Transferência eletrônica</value>
+    </data>
+    <data name="expensesFor" xml:space="preserve">
+        <value>Despesas de</value>
+    </data>
 </root>

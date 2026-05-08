@@ -26,4 +26,19 @@
     <data name="description" xml:space="preserve">
         <value>Descrição</value>
     </data>
+    <data name="cach" xml:space="preserve">
+        <value>Argent</value>
+    </data>
+    <data name="creditCard" xml:space="preserve">
+        <value>Carte de crédit</value>
+    </data>
+    <data name="debitCard" xml:space="preserve">
+        <value>Carte de débit</value>
+    </data>
+    <data name="eletronicTransfer" xml:space="preserve">
+        <value>Transfert électronique</value>
+    </data>
+    <data name="expensesFor" xml:space="preserve">
+        <value>Dépenses pour</value>
+    </data>
 </root>

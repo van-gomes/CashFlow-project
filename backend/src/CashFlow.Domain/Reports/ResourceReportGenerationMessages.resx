@@ -33,4 +33,22 @@
     <data name="description" xml:space="preserve">
         <value>Description</value>
     </data>
+    <data name="cach" xml:space="preserve">
+        <value>Cash</value>
+    </data>
+    <data name="creditCard" xml:space="preserve">
+        <value>Credit Card</value>
+    </data>
+    <data name="debitCard" xml:space="preserve">
+        <value>Debit Card</value>
+    </data>
+    <data name="eletronic_Transfer" xml:space="preserve">
+        <value />
+    </data>
+    <data name="eletronicTransfer" xml:space="preserve">
+        <value>Eletronic Transfer</value>
+    </data>
+    <data name="expensesFor" xml:space="preserve">
+        <value>Expenses for</value>
+    </data>
 </root>
