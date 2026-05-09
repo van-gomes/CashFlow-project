@@ -29,34 +29,66 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
 
         var document = CreateDocument(month);
         var page = CreatePage(document);
-        
+
         var table = page.AddTable();
+        table.Borders.Visible = false;
+
         table.AddColumn(Unit.FromCentimeter(1.8));
-        table.AddColumn(Unit.FromCentimeter(5));
+        table.AddColumn(Unit.FromCentimeter(8));
 
         var row = table.AddRow();
-
-        var image = row.Cells[0].AddImage("/home/van-gomes/Downloads/foto_GDG.jpeg");
-        image.Width = Unit.FromCentimeter(1.5);
-        image.Height = Unit.FromCentimeter(1.5);
-        image.LockAspectRatio = true;
+        row.VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
 
         row.Cells[0].VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
         row.Cells[0].Format.Alignment = ParagraphAlignment.Center;
 
-        row.Cells[1].AddParagraph("Hey,\nVânia\nGomes");
-        row.Cells[1].Format.Font = new Font { Name = FontHelper.RALEWAY_BLACK, Size = 12 };
+        var image = row.Cells[0].AddImage("/home/van-gomes/Downloads/foto_GDG.jpeg");
+
+        image.Width = Unit.FromCentimeter(1.5);
+        image.Height = Unit.FromCentimeter(1.5);
+        image.LockAspectRatio = true;
+
         row.Cells[1].VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
+        row.Cells[1].Format.LeftIndent = Unit.FromCentimeter(0.2);
+
+        var nameParagraph = row.Cells[1].AddParagraph("Hey, Vânia Gomes");
+
+        nameParagraph.Format.Font = new Font
+        {
+            Name = FontHelper.RALEWAY_BLACK,
+            Size = 12
+        };
+
+        nameParagraph.Format.SpaceBefore = 0;
+        nameParagraph.Format.SpaceAfter = 0;
 
         var paragraph = page.AddParagraph();
-        var title = string.Format(ResourceReportGenerationMessages.totalSpentIn, month.ToString("Y"));
+        paragraph.Format.SpaceBefore = "40";
+        paragraph.Format.SpaceAfter = "40";
 
-        paragraph.AddFormattedText(title, new Font { Name = FontHelper.RALEWAY_REGULAR, Size = 15 });
+        var title = string.Format(
+            ResourceReportGenerationMessages.totalSpentIn,
+            month.ToString("Y"));
+
+        paragraph.AddFormattedText(
+            title,
+            new Font
+            {
+                Name = FontHelper.RALEWAY_REGULAR,
+                Size = 15
+            });
 
         paragraph.AddLineBreak();
 
         var totalExpenses = expenses.Sum(expense => expense.Amount);
-        paragraph.AddFormattedText($"{totalExpenses} {CURRENCY_SYMBOL}", new Font { Name = FontHelper.WORKSANS_BLACK, Size = 50 });
+
+        paragraph.AddFormattedText(
+            $"{totalExpenses} {CURRENCY_SYMBOL}",
+            new Font
+            {
+                Name = FontHelper.WORKSANS_BLACK,
+                Size = 50
+            });
 
         return RenderDocument(document);
     }
