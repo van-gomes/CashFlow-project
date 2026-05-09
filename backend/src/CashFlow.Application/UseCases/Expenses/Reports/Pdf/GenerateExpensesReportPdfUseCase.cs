@@ -42,7 +42,7 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
         row.Cells[0].VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
         row.Cells[0].Format.Alignment = ParagraphAlignment.Center;
 
-        var image = row.Cells[0].AddImage("/home/van-gomes/Downloads/foto_GDG.jpeg");
+        var image = row.Cells[0].AddImage("/home/van-gomes/Downloads/foto.jpeg");
 
         image.Width = Unit.FromCentimeter(1.5);
         image.Height = Unit.FromCentimeter(1.5);
