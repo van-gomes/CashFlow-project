@@ -29,6 +29,24 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
 
         var document = CreateDocument(month);
         var page = CreatePage(document);
+        
+        var table = page.AddTable();
+        table.AddColumn(Unit.FromCentimeter(1.8));
+        table.AddColumn(Unit.FromCentimeter(5));
+
+        var row = table.AddRow();
+
+        var image = row.Cells[0].AddImage("/home/van-gomes/Downloads/foto_GDG.jpeg");
+        image.Width = Unit.FromCentimeter(1.5);
+        image.Height = Unit.FromCentimeter(1.5);
+        image.LockAspectRatio = true;
+
+        row.Cells[0].VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
+        row.Cells[0].Format.Alignment = ParagraphAlignment.Center;
+
+        row.Cells[1].AddParagraph("Hey,\nVânia\nGomes");
+        row.Cells[1].Format.Font = new Font { Name = FontHelper.RALEWAY_BLACK, Size = 12 };
+        row.Cells[1].VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
 
         var paragraph = page.AddParagraph();
         var title = string.Format(ResourceReportGenerationMessages.totalSpentIn, month.ToString("Y"));
