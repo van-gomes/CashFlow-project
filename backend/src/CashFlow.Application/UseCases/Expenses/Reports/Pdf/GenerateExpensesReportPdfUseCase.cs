@@ -1,3 +1,4 @@
+using System.Reflection;
 using CashFlow.Application.UseCases.Expenses.Register.Reports.PDF.Fonts;
 using CashFlow.Domain.Reports;
 using CashFlow.Domain.Repositories.Expenses;
@@ -30,65 +31,10 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
         var document = CreateDocument(month);
         var page = CreatePage(document);
 
-        var table = page.AddTable();
-        table.Borders.Visible = false;
-
-        table.AddColumn(Unit.FromCentimeter(1.8));
-        table.AddColumn(Unit.FromCentimeter(8));
-
-        var row = table.AddRow();
-        row.VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
-
-        row.Cells[0].VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
-        row.Cells[0].Format.Alignment = ParagraphAlignment.Center;
-
-        var image = row.Cells[0].AddImage("/home/van-gomes/Downloads/foto.jpeg");
-
-        image.Width = Unit.FromCentimeter(1.5);
-        image.Height = Unit.FromCentimeter(1.5);
-        image.LockAspectRatio = true;
-
-        row.Cells[1].VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
-        row.Cells[1].Format.LeftIndent = Unit.FromCentimeter(0.2);
-
-        var nameParagraph = row.Cells[1].AddParagraph("Hey, Vânia Gomes");
-
-        nameParagraph.Format.Font = new Font
-        {
-            Name = FontHelper.RALEWAY_BLACK,
-            Size = 12
-        };
-
-        nameParagraph.Format.SpaceBefore = 0;
-        nameParagraph.Format.SpaceAfter = 0;
-
-        var paragraph = page.AddParagraph();
-        paragraph.Format.SpaceBefore = "40";
-        paragraph.Format.SpaceAfter = "40";
-
-        var title = string.Format(
-            ResourceReportGenerationMessages.totalSpentIn,
-            month.ToString("Y"));
-
-        paragraph.AddFormattedText(
-            title,
-            new Font
-            {
-                Name = FontHelper.RALEWAY_REGULAR,
-                Size = 15
-            });
-
-        paragraph.AddLineBreak();
+        CreateHeaderWithProfilePhotoAndName(page);
 
         var totalExpenses = expenses.Sum(expense => expense.Amount);
-
-        paragraph.AddFormattedText(
-            $"{totalExpenses} {CURRENCY_SYMBOL}",
-            new Font
-            {
-                Name = FontHelper.WORKSANS_BLACK,
-                Size = 50
-            });
+        CreateTotalSpentSection(page, month, totalExpenses);
 
         return RenderDocument(document);
     }
@@ -98,7 +44,7 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
         var document = new Document();
 
         document.Info.Title = $"{ResourceReportGenerationMessages.expensesFor} {month:Y}";
-        document.Info.Author = "Vânia Gomes";
+        document.Info.Author = "Welisson Arley";
 
         var style = document.Styles["Normal"];
         style!.Font.Name = FontHelper.RALEWAY_REGULAR;
@@ -120,7 +66,61 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
 
         return section;
     }
-    
+
+    private void CreateHeaderWithProfilePhotoAndName(Section page)
+    {
+        var table = page.AddTable();
+        table.Borders.Visible = false;
+
+        table.AddColumn(Unit.FromPoint(70));
+        table.AddColumn(Unit.FromPoint(300));
+
+        var row = table.AddRow();
+
+        var pathFile = Path.Combine(
+            AppContext.BaseDirectory,
+            "UseCases",
+            "Expenses",
+            "Reports",
+            "Logo",
+            "ProfilePhoto.png");
+
+        row.Cells[0].AddImage(pathFile);
+
+        row.Cells[0].VerticalAlignment =
+            MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
+
+        row.Cells[0].Format.Alignment =
+            ParagraphAlignment.Center;
+
+        var nameParagraph =
+            row.Cells[1].AddParagraph("Hey, Vânia Gomes");
+
+        nameParagraph.Format.Font = new Font
+        {
+            Name = FontHelper.RALEWAY_BLACK,
+            Size = 16
+        };
+
+        row.Cells[1].VerticalAlignment =
+            MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
+    }
+
+    private void CreateTotalSpentSection(Section page, DateOnly month, decimal totalExpenses)
+    {
+        var paragraph = page.AddParagraph();
+        paragraph.Format.SpaceBefore = "40";
+        paragraph.Format.SpaceAfter = "40";
+
+        var title = string.Format(ResourceReportGenerationMessages.totalSpentIn, month.ToString("Y"));
+
+        paragraph.AddFormattedText(title, new Font { Name = FontHelper.RALEWAY_REGULAR, Size = 15 });
+
+        paragraph.AddLineBreak();
+
+        paragraph.AddFormattedText($"{totalExpenses} {CURRENCY_SYMBOL}", new Font { Name = FontHelper.WORKSANS_BLACK, Size = 50 });
+    }
+
     private byte[] RenderDocument(Document document)
     {
         var renderer = new PdfDocumentRenderer
