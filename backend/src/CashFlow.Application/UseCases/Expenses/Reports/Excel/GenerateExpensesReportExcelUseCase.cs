@@ -1,4 +1,5 @@
 using CashFlow.Domain.Enums;
+using CashFlow.Domain.Extensions;
 using CashFlow.Domain.Reports;
 using CashFlow.Domain.Repositories.Expenses;
 using ClosedXML.Excel;
@@ -23,7 +24,7 @@ public class GenerateExpensesReportExcelUseCase : IGenerateExpensesReportExcelUs
             return [];
         }
 
-        var workbook = new XLWorkbook();
+        using var workbook = new XLWorkbook();
 
         workbook.Author = "Welisson Arley";
         workbook.Style.Font.FontSize = 12;
@@ -38,7 +39,7 @@ public class GenerateExpensesReportExcelUseCase : IGenerateExpensesReportExcelUs
         {
             worksheet.Cell($"A{raw}").Value = expense.Title;
             worksheet.Cell($"B{raw}").Value = expense.Date;
-            worksheet.Cell($"C{raw}").Value = ConvertPaymentType(expense.PaymentType);
+            worksheet.Cell($"C{raw}").Value = expense.PaymentType.PaymentTypeToString();
             
             worksheet.Cell($"D{raw}").Value = expense.Amount;
             worksheet.Cell($"D{raw}").Style.NumberFormat.Format = $"-{CURRENCY_SYMBOL} #,##0.00";
@@ -56,25 +57,13 @@ public class GenerateExpensesReportExcelUseCase : IGenerateExpensesReportExcelUs
         return file.ToArray();
     }
 
-    private string ConvertPaymentType(PaymentType payment)
-    {
-        return payment switch
-        {
-            PaymentType.Cash => "Dinheiro",
-            PaymentType.CreditCard => "Cartão de Crédio",
-            PaymentType.DebitCard => "Cartão de Débito",
-            PaymentType.EletronicTransfer => "Transferencia Bancaria",
-            _ => string.Empty
-        };
-    }
-
     private void InsertHeader(IXLWorksheet worksheet)
     {
         worksheet.Cell("A1").Value = ResourceReportGenerationMessages.title;
         worksheet.Cell("B1").Value = ResourceReportGenerationMessages.date;
         worksheet.Cell("C1").Value = ResourceReportGenerationMessages.paymentType;
         worksheet.Cell("D1").Value = ResourceReportGenerationMessages.amount;
-        worksheet.Cell("E1").Value = ResourceReportGenerationMessages.description;
+        worksheet.Cell("E1").Value = ResourceReportGenerationMessages.debitCard;
 
         worksheet.Cells("A1:E1").Style.Font.Bold = true;
 
