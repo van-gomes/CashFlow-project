@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "rj6zj65RnqAnQSHL8GkCn9S/MJ55lMSCy1ntMDMurwo=",
+  "Hash": "mlp/pGOF6YoX8rT8mRPlTiNmSqq19XGyIGqavlXwBH8=",
   "Source": "CashFlow.Api",
   "BasePath": "_content/CashFlow.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
