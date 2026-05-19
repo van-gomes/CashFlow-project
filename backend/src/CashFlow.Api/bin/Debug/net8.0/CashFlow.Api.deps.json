@@ -1187,7 +1187,7 @@
         },
         "runtime": {
           "CashFlow.Application.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1198,7 +1198,7 @@
         },
         "runtime": {
           "CashFlow.Communication.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1206,7 +1206,7 @@
       "CashFlow.Domain/1.0.0": {
         "runtime": {
           "CashFlow.Domain.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         },
@@ -1225,7 +1225,7 @@
       "CashFlow.Exception/1.0.0": {
         "runtime": {
           "CashFlow.Exception.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         },
@@ -1250,7 +1250,7 @@
         },
         "runtime": {
           "CashFlow.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
