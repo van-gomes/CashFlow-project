@@ -80,5 +80,23 @@ namespace CashFlow.Exception {
                 return ResourceManager.GetString("unknownError", resourceCulture);
             }
         }
+        
+        internal static string emailEmpty {
+            get {
+                return ResourceManager.GetString("emailEmpty", resourceCulture);
+            }
+        }
+        
+        internal static string emailInvalid {
+            get {
+                return ResourceManager.GetString("emailInvalid", resourceCulture);
+            }
+        }
+        
+        internal static string nameEmpty {
+            get {
+                return ResourceManager.GetString("nameEmpty", resourceCulture);
+            }
+        }
     }
 }

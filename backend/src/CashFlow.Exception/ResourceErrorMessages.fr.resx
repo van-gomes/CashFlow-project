@@ -36,4 +36,13 @@
     <data name="unknownError" xml:space="preserve">
         <value>Erreur inconnue.</value>
     </data>
+    <data name="emailEmpty" xml:space="preserve">
+        <value>L'email ne peut pas être vide.</value>
+    </data>
+    <data name="emailInvalid" xml:space="preserve">
+        <value>L'email n'est pas valide.</value>
+    </data>
+    <data name="nameEmpty" xml:space="preserve">
+        <value>Le nom ne peut pas être vide.</value>
+    </data>
 </root>

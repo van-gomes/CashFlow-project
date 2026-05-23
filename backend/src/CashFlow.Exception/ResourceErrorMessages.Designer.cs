@@ -6,78 +6,125 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
-namespace CashFlow.Exception {
+namespace CashFlow.Exception
+{
     using System;
-    
-    
+    using System.Globalization;
+    using System.Resources;
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ResourceErrorMessages {
-        
-        private static System.Resources.ResourceManager resourceMan;
-        
-        private static System.Globalization.CultureInfo resourceCulture;
-        
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResourceErrorMessages() {
+    public class ResourceErrorMessages
+    {
+        private static ResourceManager resourceMan;
+
+        private static CultureInfo resourceCulture;
+
+        internal ResourceErrorMessages()
+        {
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("CashFlow.Exception.ResourceErrorMessages", typeof(ResourceErrorMessages).Assembly);
+        public static ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.Equals(null, resourceMan))
+                {
+                    ResourceManager temp = new ResourceManager(
+                        "CashFlow.Exception.ResourceErrorMessages",
+                        typeof(ResourceErrorMessages).Assembly);
+
                     resourceMan = temp;
                 }
+
                 return resourceMan;
             }
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static System.Globalization.CultureInfo Culture {
-            get {
+        public static CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
 
-        public static string unknownError {
-            get {
+        public static string unknownError
+        {
+            get
+            {
                 return ResourceManager.GetString("unknownError", resourceCulture);
             }
         }
 
-        public static string titleRequired {
-            get {
+        public static string titleRequired
+        {
+            get
+            {
                 return ResourceManager.GetString("titleRequired", resourceCulture);
             }
         }
 
-        public static string paymentTypeInvalid {
-            get {
+        public static string paymentTypeInvalid
+        {
+            get
+            {
                 return ResourceManager.GetString("paymentTypeInvalid", resourceCulture);
             }
         }
 
-        public static string expensesCannotForTheFuture {
-            get {
+        public static string expensesCannotForTheFuture
+        {
+            get
+            {
                 return ResourceManager.GetString("expensesCannotForTheFuture", resourceCulture);
             }
         }
 
-        public static string amountMustBeGreaterThanZero {
-            get {
+        public static string amountMustBeGreaterThanZero
+        {
+            get
+            {
                 return ResourceManager.GetString("amountMustBeGreaterThanZero", resourceCulture);
             }
         }
 
-        public static string expenseNotFound {
-            get {
+        public static string expenseNotFound
+        {
+            get
+            {
                 return ResourceManager.GetString("expenseNotFound", resourceCulture);
+            }
+        }
+
+        public static string nameEmpty
+        {
+            get
+            {
+                return ResourceManager.GetString("nameEmpty", resourceCulture);
+            }
+        }
+
+        public static string emailEmpty
+        {
+            get
+            {
+                return ResourceManager.GetString("emailEmpty", resourceCulture);
+            }
+        }
+
+        public static string emailInvalid
+        {
+            get
+            {
+                return ResourceManager.GetString("emailInvalid", resourceCulture);
             }
         }
     }

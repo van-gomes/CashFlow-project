@@ -36,4 +36,13 @@
     <data name="expenseNotFound" xml:space="preserve">
         <value>Expense not found</value>
     </data>
+    <data name="nameEmpty" xml:space="preserve">
+        <value>The name cannot be empty.</value>
+    </data>
+    <data name="emailEmpty" xml:space="preserve">
+        <value>The email cannot be empty.</value>
+    </data>
+    <data name="emailInvalid" xml:space="preserve">
+        <value>The email is invalid</value>
+    </data>
 </root>
