@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "b8YLRMQUenM=",
+  "dgSpecHash": "8S6oO73IkuE=",
   "success": true,
   "projectFilePath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/src/CashFlow.Infrastructure/CashFlow.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/van-gomes/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/bcrypt.net-next/4.2.0/bcrypt.net-next.4.2.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
