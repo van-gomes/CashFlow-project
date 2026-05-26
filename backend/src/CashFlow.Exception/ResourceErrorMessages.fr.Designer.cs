@@ -98,5 +98,11 @@ namespace CashFlow.Exception {
                 return ResourceManager.GetString("nameEmpty", resourceCulture);
             }
         }
+        
+        internal static string invakidPassword {
+            get {
+                return ResourceManager.GetString("invakidPassword", resourceCulture);
+            }
+        }
     }
 }

@@ -45,4 +45,7 @@
     <data name="nameEmpty" xml:space="preserve">
         <value>Le nom ne peut pas être vide.</value>
     </data>
+    <data name="invakidPassword" xml:space="preserve">
+        <value>Votre mot de passe doit comporter au minimum 8 caractères, dont au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial (par exemple, !, ?, *, .).</value>
+    </data>
 </root>
