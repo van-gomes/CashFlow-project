@@ -1,4 +1,3 @@
-using CashFlow.Domain.Entities;
 using CashFlow.Domain.Enums;
 
 namespace CashFlow.Domain;
@@ -13,5 +12,5 @@ public class Expense
     public PaymentType PaymentType { get; set; }
     
     public long UserId { get; set; }
-    public User User { get; set; } = default!;
+    public Entities.User User { get; set; } = default!;
 }
