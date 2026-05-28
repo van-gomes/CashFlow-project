@@ -48,4 +48,7 @@
     <data name="invakidPassword" xml:space="preserve">
         <value>Votre mot de passe doit comporter au minimum 8 caractères, dont au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial (par exemple, !, ?, *, .).</value>
     </data>
+    <data name="emailAlreadyRegistred" xml:space="preserve">
+        <value>Cet e-mail est déjà utilisé.</value>
+    </data>
 </root>

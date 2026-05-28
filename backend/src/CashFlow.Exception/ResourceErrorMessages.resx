@@ -48,4 +48,7 @@
     <data name="invakidPassword" xml:space="preserve">
         <value>Your password should be a minimum of 8 characters, containing at least one uppercase letter, one lowercase letter, one number, and one special character (e.g., !, ?, *, .).</value>
     </data>
+    <data name="emailAlreadyRegistred" xml:space="preserve">
+        <value>This email is already in use</value>
+    </data>
 </root>

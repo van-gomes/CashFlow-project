@@ -48,4 +48,7 @@
     <data name="invakidPassword" xml:space="preserve">
         <value>Sua senha deve ter no mínimo 8 caracteres, contendo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial (por exemplo, !, ?, *, .).</value>
     </data>
+    <data name="emailAlreadyRegistred" xml:space="preserve">
+        <value>Esse e-mail já está sendo usado</value>
+    </data>
 </root>

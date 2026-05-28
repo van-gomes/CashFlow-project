@@ -4,7 +4,9 @@ using CashFlow.Communication.Responses;
 using CashFlow.Domain.Repositories;
 using CashFlow.Domain.Security.Cryptography;
 using CashFlow.Domain.User;
+using CashFlow.Exception;
 using CashFlow.Exception.ExceptionsBase;
+using FluentValidation.Results;
 
 namespace CashFlow.Application.UseCases.Users.Register;
 
@@ -55,7 +57,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         var emailExist = await _userReadOnlyRepository.ExistActiveUserWithEmail(request.Email);
         if(emailExist)
         {
-            //result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.EMAIL_ALREADY_REGISTERED));
+            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.emailAlreadyRegistred));
         }
 
         if (result.IsValid == false)

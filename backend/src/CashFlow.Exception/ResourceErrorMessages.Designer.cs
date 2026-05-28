@@ -104,5 +104,11 @@ namespace CashFlow.Exception {
                 return ResourceManager.GetString("invakidPassword", resourceCulture);
             }
         }
+        
+        public static string emailAlreadyRegistred {
+            get {
+                return ResourceManager.GetString("emailAlreadyRegistred", resourceCulture);
+            }
+        }
     }
 }

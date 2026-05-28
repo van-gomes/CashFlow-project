@@ -48,4 +48,7 @@
     <data name="invakidPassword" xml:space="preserve">
         <value>A sua palavra-passe deve ter um mínimo de 8 caracteres, contendo pelo menos uma letra maiúscula, uma letra minúscula, um número e um carácter especial (por exemplo, !, ?, *, .).</value>
     </data>
+    <data name="emailAlreadyRegistred" xml:space="preserve">
+        <value>&gt;Este correio eletrónico já está a ser utilizado</value>
+    </data>
 </root>
