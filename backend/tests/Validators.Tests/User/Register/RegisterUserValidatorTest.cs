@@ -19,7 +19,7 @@ public class RegisterUserValidatorTest
         result.IsValid.Should().BeTrue();
     }
 
-    [Xunit.Theory]
+    [Theory]
     [InlineData("")]
     [InlineData("      ")]
     [InlineData(null)]
@@ -36,7 +36,7 @@ public class RegisterUserValidatorTest
             e.ErrorMessage.Equals(ResourceErrorMessages.nameEmpty));
     }
 
-    [Xunit.Theory]
+    [Theory]
     [InlineData("")]
     [InlineData("      ")]
     [InlineData(null)]

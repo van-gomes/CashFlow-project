@@ -126,13 +126,13 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/xunit.abstractions.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/CommonTestUtilities.deps.json
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/CommonTestUtilities.runtimeconfig.json
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/xunit.runner.visualstudio.testadapter.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/NUnit3.TestAdapter.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/nunit.engine.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/nunit.engine.api.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/nunit.engine.core.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/testcentric.engine.metadata.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/xunit.runner.visualstudio.testadapter.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/UseCases/Expenses/Reports/Logo/ProfilePhoto.png
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Validators.Tests.deps.json
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Validators.Tests.runtimeconfig.json
@@ -142,6 +142,7 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Azure.Core.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Azure.Identity.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/BCrypt-Net-Next.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Bogus.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/ClosedXML.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/ClosedXML.Parser.dll
@@ -162,6 +163,7 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
@@ -326,5 +328,3 @@
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/obj/Debug/net8.0/Validators.Tests.pdb
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/obj/Debug/net8.0/Validators.Tests.genruntimeconfig.cache
 /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/obj/Debug/net8.0/ref/Validators.Tests.dll
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/BCrypt-Net-Next.dll
-/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll

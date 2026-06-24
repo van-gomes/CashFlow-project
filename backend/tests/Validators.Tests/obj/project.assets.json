@@ -1063,7 +1063,7 @@
           "lib/netstandard1.0/_._": {}
         },
         "build": {
-          "build/netstandard2.0/NETStandard.Library.targets": {}
+          "build/netstandard2.0/_._": {}
         }
       },
       "Newtonsoft.Json/13.0.1": {
@@ -1095,7 +1095,7 @@
           }
         },
         "build": {
-          "build/NUnit.props": {}
+          "build/_._": {}
         }
       },
       "NUnit.Analyzers/3.9.0": {
@@ -1104,7 +1104,7 @@
       "NUnit3TestAdapter/4.5.0": {
         "type": "package",
         "build": {
-          "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
+          "build/netcoreapp3.1/_._": {}
         }
       },
       "PDFsharp/7.0.0-preview-1": {
@@ -4829,9 +4829,6 @@
       "CommonTestUtilities >= 1.0.0",
       "FluentAssertions >= 8.2.0",
       "Microsoft.NET.Test.Sdk >= 17.13.0",
-      "NUnit >= 3.14.0",
-      "NUnit.Analyzers >= 3.9.0",
-      "NUnit3TestAdapter >= 4.5.0",
       "coverlet.collector >= 6.0.0",
       "xunit >= 2.9.3",
       "xunit.runner.visualstudio >= 3.1.0"
@@ -4880,8 +4877,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -4894,18 +4890,6 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.13.0, )"
-          },
-          "NUnit": {
-            "target": "Package",
-            "version": "[3.14.0, )"
-          },
-          "NUnit.Analyzers": {
-            "target": "Package",
-            "version": "[3.9.0, )"
-          },
-          "NUnit3TestAdapter": {
-            "target": "Package",
-            "version": "[4.5.0, )"
           },
           "coverlet.collector": {
             "target": "Package",
@@ -4933,22 +4917,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.13, 8.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.13, 8.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/van-gomes/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
