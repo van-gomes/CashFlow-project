@@ -4,25 +4,22 @@ using CommonTestUtilities.Requests;
 using FluentAssertions;
 using Xunit;
 
-namespace Validators.Tests.User.Register;
+namespace Validators.Tests.Users.Register;
 
 public class RegisterUserValidatorTest
 {
     [Fact]
     public void Success()
     {
-        //Arrange
         var validator = new RegisterUserValidator();
         var request = RequestRegisterUserJsonBuilder.Build();
 
-        //Act
         var result = validator.Validate(request);
 
-        //Assert
         result.IsValid.Should().BeTrue();
     }
 
-    [NUnit.Framework.Theory]
+    [Xunit.Theory]
     [InlineData("")]
     [InlineData("      ")]
     [InlineData(null)]
@@ -35,10 +32,11 @@ public class RegisterUserValidatorTest
         var result = validator.Validate(request);
 
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().ContainSingle().And.Contain(e => e.ErrorMessage.Equals(ResourceErrorMessages.nameEmpty));
+        result.Errors.Should().ContainSingle().And.Contain(e =>
+            e.ErrorMessage.Equals(ResourceErrorMessages.nameEmpty));
     }
 
-    [NUnit.Framework.Theory]
+    [Xunit.Theory]
     [InlineData("")]
     [InlineData("      ")]
     [InlineData(null)]
@@ -51,6 +49,35 @@ public class RegisterUserValidatorTest
         var result = validator.Validate(request);
 
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().ContainSingle().And.Contain(e => e.ErrorMessage.Equals(ResourceErrorMessages.emailEmpty));
+        result.Errors.Should().ContainSingle().And.Contain(e =>
+            e.ErrorMessage.Equals(ResourceErrorMessages.emailEmpty));
+    }
+
+    [Fact]
+    public void Error_Email_Invalid()
+    {
+        var validator = new RegisterUserValidator();
+        var request = RequestRegisterUserJsonBuilder.Build();
+        request.Email = "welisson.com";
+
+        var result = validator.Validate(request);
+
+        result.IsValid.Should().BeFalse();
+        result.Errors.Should().ContainSingle().And.Contain(e =>
+            e.ErrorMessage.Equals(ResourceErrorMessages.emailInvalid));
+    }
+
+    [Fact]
+    public void Error_Password_Empty()
+    {
+        var validator = new RegisterUserValidator();
+        var request = RequestRegisterUserJsonBuilder.Build();
+        request.Password = string.Empty;
+
+        var result = validator.Validate(request);
+
+        result.IsValid.Should().BeFalse();
+        result.Errors.Should().ContainSingle().And.Contain(e =>
+            e.ErrorMessage.Equals(ResourceErrorMessages.invakidPassword));
     }
 }
