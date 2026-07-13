@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4BAEA795-F0F4-4271-9EF3-C546B112052C}"
 	ProjectSection(SolutionItems) = preProject
 		src\.gitignore = src\.gitignore
@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases.Test", "tests\UseCases.Test\UseCases.Test.csproj", "{46978018-1809-43E1-8529-E8AD2854AFEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Tests", "tests\WebApi.Tests\WebApi.Tests.csproj", "{E6C860BF-5A1D-4FBF-BD85-28744193137B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,7 @@ Global
 		{6770EB47-D037-441C-8B8B-E61201C0F65D} = {21E1CC81-57A0-471B-A91F-1009685C4D35}
 		{A9AA73E9-8090-4709-BD65-7316F2F84F62} = {21E1CC81-57A0-471B-A91F-1009685C4D35}
 		{46978018-1809-43E1-8529-E8AD2854AFEC} = {21E1CC81-57A0-471B-A91F-1009685C4D35}
+		{E6C860BF-5A1D-4FBF-BD85-28744193137B} = {21E1CC81-57A0-471B-A91F-1009685C4D35}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{90B55496-E15C-4885-B663-4C350ED24424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -79,5 +82,9 @@ Global
 		{46978018-1809-43E1-8529-E8AD2854AFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46978018-1809-43E1-8529-E8AD2854AFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46978018-1809-43E1-8529-E8AD2854AFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C860BF-5A1D-4FBF-BD85-28744193137B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C860BF-5A1D-4FBF-BD85-28744193137B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C860BF-5A1D-4FBF-BD85-28744193137B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C860BF-5A1D-4FBF-BD85-28744193137B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

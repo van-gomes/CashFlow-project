@@ -11,5 +11,3 @@ build_property.RootNamespace = CommonTestUtilities
 build_property.ProjectDir = /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/CommonTestUtilities/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
