@@ -36,7 +36,7 @@ public class RegisterUserUseCaseTest
 
         var result = await act.Should().ThrowAsync<ErrorOnValidationException>();
 
-        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.nameEmpty));
+        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.NAME_EMPTY));
     }
 
     [Fact]
@@ -50,7 +50,7 @@ public class RegisterUserUseCaseTest
 
         var result = await act.Should().ThrowAsync<ErrorOnValidationException>();
 
-        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.emailAlreadyRegistred));
+        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.EMAIL_ALREADY_REGISTERED));
     }
 
     private RegisterUserUseCase CreateUseCase(string? email = null)
@@ -58,7 +58,7 @@ public class RegisterUserUseCaseTest
         var mapper = MapperBuilder.Build();
         var unitOfWork = UnitOfWorkBuilder.Build();
         var writeRepository = UserWriteOnlyRepositoryBuilder.Build();
-        var passwordEncripter = PasswordEncripterBuilder.Build();
+        var passwordEncripter = new PasswordEncrypterBuilder().Build();
         var tokenGenerator = JwtTokenGeneratorBuilder.Build();
         var readRepository = new UserReadOnlyRepositoryBuilder();
 
