@@ -11,3 +11,5 @@ build_property.RootNamespace = Validators.Tests
 build_property.ProjectDir = /home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/Validators.Tests/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
