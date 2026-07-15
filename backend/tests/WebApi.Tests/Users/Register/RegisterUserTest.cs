@@ -5,6 +5,7 @@ using FluentAssertions;
 using System.Globalization;
 using System.Net;
 using System.Text.Json;
+using WebApi.Test.InlineData;
 
 namespace WebApi.Test.Users.Register;
 public class RegisterUserTest : CashFlowClassFixture
