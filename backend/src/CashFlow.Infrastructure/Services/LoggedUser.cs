@@ -1,10 +1,10 @@
 using CashFlow.Domain.Entities;
-using CashFlow.Domain.Security.Tokens;
 using CashFlow.Domain.Services.LoggedUser;
 using CashFlow.Infrastructure.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using CashFlow.Domain.Tokens;
 
 namespace CashFlow.Infrastructure.Services.LoggedUser;
 internal class LoggedUser : ILoggedUser
