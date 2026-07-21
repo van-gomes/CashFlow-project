@@ -1,4 +1,5 @@
 using CashFlow.Domain;
+using CashFlow.Domain.Entities;
 using CashFlow.Domain.Repositories;
 using CashFlow.Domain.Repositories.Expenses;
 using Microsoft.EntityFrameworkCore;
@@ -41,11 +42,11 @@ internal class ExpensesRepository : IExpensesReadOnlyRepository, IExpensesWriteO
         return await _dbContext.Expenses.AsNoTracking().FirstOrDefaultAsync(expense => expense.Id == id);
     }
 
-    async Task<Expense?> IExpensesUpdateOnlyRepository.GetById(long id)
+    async Task<Expense?> IExpensesUpdateOnlyRepository.GetById(User user, long id)
     {
-        return await _dbContext.Expenses.FirstOrDefaultAsync(expense => expense.Id == id);
+        return await _dbContext.Expenses.FirstOrDefaultAsync(expense => expense.Id == id && expense.UserId == user.Id);
     }
-
+    
     public void Update(Expense expense)
     {
         _dbContext.Expenses.Update(expense);
