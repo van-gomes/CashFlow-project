@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "6wX8KNeJ7cU=",
-  "success": true,
+  "dgSpecHash": "HpiEBiiht0U=",
+  "success": false,
   "projectFilePath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
   "expectedPackageFiles": [
     "/home/van-gomes/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
@@ -19,6 +19,10 @@
     "/home/van-gomes/.nuget/packages/excelnumberformat/1.1.0/excelnumberformat.1.1.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/fluentassertions/6.12.0/fluentassertions.6.12.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/fluentvalidation/12.0.0-preview1/fluentvalidation.12.0.0-preview1.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.0/microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.aspnetcore.mvc.testing/8.0.0/microsoft.aspnetcore.mvc.testing.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.aspnetcore.openapi/8.0.10/microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.aspnetcore.testhost/8.0.0/microsoft.aspnetcore.testhost.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.bcl.cryptography/10.0.5/microsoft.bcl.cryptography.10.0.5.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",
@@ -28,29 +32,51 @@
     "/home/van-gomes/.nuget/packages/microsoft.entityframeworkcore/8.0.5/microsoft.entityframeworkcore.8.0.5.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.5/microsoft.entityframeworkcore.abstractions.8.0.5.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.5/microsoft.entityframeworkcore.analyzers.8.0.5.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.entityframeworkcore.inmemory/8.0.0/microsoft.entityframeworkcore.inmemory.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.5/microsoft.entityframeworkcore.relational.8.0.5.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.entityframeworkcore.sqlserver/8.0.5/microsoft.entityframeworkcore.sqlserver.8.0.5.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.configuration.commandline/8.0.0/microsoft.extensions.configuration.commandline.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.configuration.environmentvariables/8.0.0/microsoft.extensions.configuration.environmentvariables.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.configuration.fileextensions/8.0.0/microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.configuration.json/8.0.0/microsoft.extensions.configuration.json.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.configuration.usersecrets/8.0.0/microsoft.extensions.configuration.usersecrets.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.5/microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.dependencymodel/8.0.0/microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.diagnostics/8.0.0/microsoft.extensions.diagnostics.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.diagnostics.abstractions/8.0.0/microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.fileproviders.physical/8.0.0/microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.filesystemglobbing/8.0.0/microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.hosting/8.0.0/microsoft.extensions.hosting.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.hosting.abstractions/8.0.0/microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.5/microsoft.extensions.logging.abstractions.10.0.5.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.logging.configuration/8.0.0/microsoft.extensions.logging.configuration.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.logging.console/8.0.0/microsoft.extensions.logging.console.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.logging.debug/8.0.0/microsoft.extensions.logging.debug.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.logging.eventlog/8.0.0/microsoft.extensions.logging.eventlog.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.logging.eventsource/8.0.0/microsoft.extensions.logging.eventsource.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.extensions.options.configurationextensions/8.0.0/microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.identity.client/4.56.0/microsoft.identity.client.4.56.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.identity.client.extensions.msal/4.56.0/microsoft.identity.client.extensions.msal.4.56.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.identitymodel.abstractions/8.18.0/microsoft.identitymodel.abstractions.8.18.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.18.0/microsoft.identitymodel.jsonwebtokens.8.18.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.identitymodel.logging/8.18.0/microsoft.identitymodel.logging.8.18.0.nupkg.sha512",
-    "/home/van-gomes/.nuget/packages/microsoft.identitymodel.protocols/6.35.0/microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
-    "/home/van-gomes/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.35.0/microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.identitymodel.protocols/7.0.3/microsoft.identitymodel.protocols.7.0.3.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/7.0.3/microsoft.identitymodel.protocols.openidconnect.7.0.3.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.identitymodel.tokens/8.18.0/microsoft.identitymodel.tokens.8.18.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.net.test.sdk/17.8.0/microsoft.net.test.sdk.17.8.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.testplatform.objectmodel/17.8.0/microsoft.testplatform.objectmodel.17.8.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.testplatform.testhost/17.8.0/microsoft.testplatform.testhost.17.8.0.nupkg.sha512",
@@ -66,14 +92,19 @@
     "/home/van-gomes/.nuget/packages/pdfsharp-migradoc/7.0.0-preview-1/pdfsharp-migradoc.7.0.0-preview-1.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/rbush.signed/4.0.0/rbush.signed.4.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/sixlabors.fonts/1.0.0/sixlabors.fonts.1.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.configuration.configurationmanager/6.0.1/system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.diagnostics.diagnosticsource/10.0.5/system.diagnostics.diagnosticsource.10.0.5.nupkg.sha512",
-    "/home/van-gomes/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/system.diagnostics.eventlog/8.0.0/system.diagnostics.eventlog.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.formats.asn1/10.0.5/system.formats.asn1.10.0.5.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.identitymodel.tokens.jwt/8.18.0/system.identitymodel.tokens.jwt.8.18.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.io.filesystem.accesscontrol/5.0.0/system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.io.packaging/8.0.1/system.io.packaging.8.0.1.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
@@ -87,8 +118,8 @@
     "/home/van-gomes/.nuget/packages/system.security.permissions/6.0.0/system.security.permissions.6.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.text.encoding.codepages/6.0.0/system.text.encoding.codepages.6.0.0.nupkg.sha512",
-    "/home/van-gomes/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
-    "/home/van-gomes/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/home/van-gomes/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/xunit/2.5.3/xunit.2.5.3.nupkg.sha512",
@@ -102,5 +133,61 @@
     "/home/van-gomes/.nuget/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
     "/home/van-gomes/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: coverlet.collector from 6.0.2 to 6.0.0. Reference the package directly from the project to select a different version. \n UseCases.Test -> WebApi.Tests -> coverlet.collector (>= 6.0.2) \n UseCases.Test -> coverlet.collector (>= 6.0.0)",
+      "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "filePath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "libraryId": "coverlet.collector",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: FluentAssertions from 8.10.0 to 6.12.0. Reference the package directly from the project to select a different version. \n UseCases.Test -> WebApi.Tests -> FluentAssertions (>= 8.10.0) \n UseCases.Test -> FluentAssertions (>= 6.12.0)",
+      "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "filePath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "libraryId": "FluentAssertions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.NET.Test.Sdk from 17.12.0 to 17.8.0. Reference the package directly from the project to select a different version. \n UseCases.Test -> WebApi.Tests -> Microsoft.NET.Test.Sdk (>= 17.12.0) \n UseCases.Test -> Microsoft.NET.Test.Sdk (>= 17.8.0)",
+      "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "filePath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: xunit from 2.9.2 to 2.5.3. Reference the package directly from the project to select a different version. \n UseCases.Test -> WebApi.Tests -> xunit (>= 2.9.2) \n UseCases.Test -> xunit (>= 2.5.3)",
+      "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "filePath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "libraryId": "xunit",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: xunit.runner.visualstudio from 2.8.2 to 2.5.3. Reference the package directly from the project to select a different version. \n UseCases.Test -> WebApi.Tests -> xunit.runner.visualstudio (>= 2.8.2) \n UseCases.Test -> xunit.runner.visualstudio (>= 2.5.3)",
+      "projectPath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "filePath": "/home/van-gomes/Documentos/Rocketseat/asp_net/projects/CashFlow_project/backend/tests/UseCases.Test/UseCases.Test.csproj",
+      "libraryId": "xunit.runner.visualstudio",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

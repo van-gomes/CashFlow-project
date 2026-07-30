@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\CashFlow.Application\CashFlow.Application.csproj" />
     <ProjectReference Include="..\CommonTestUtilities\CommonTestUtilities.csproj" />
+    <ProjectReference Include="..\WebApi.Tests\WebApi.Tests.csproj" />
   </ItemGroup>
 
 </Project>
