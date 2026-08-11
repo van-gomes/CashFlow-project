@@ -1,9 +1,9 @@
-using System.Net.Mime;
-using CashFlow.Application.UseCases.Expenses.Register.Reports.Excel;
-using CashFlow.Application.UseCases.Expenses.Register.Reports.PDF;
 using CashFlow.Domain.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Mime;
+using CashFlow.Application.UseCases.Expenses.Register.Reports.Excel;
+using CashFlow.Application.UseCases.Expenses.Register.Reports.PDF;
 
 namespace CashFlow.Api.Controllers;
 

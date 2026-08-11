@@ -35,6 +35,6 @@ public class ExpensesReadOnlyRepositoryBuilder
 
         return this;
     }
-
+    
     public IExpensesReadOnlyRepository Build() => _repository.Object;
 }

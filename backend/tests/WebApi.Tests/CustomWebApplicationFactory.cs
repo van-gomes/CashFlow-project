@@ -1,5 +1,5 @@
-﻿using CashFlow.Domain;
-using CashFlow.Domain.Entities;
+﻿﻿using CashFlow.Domain;
+ using CashFlow.Domain.Entities;
 using CashFlow.Domain.Enums;
 using CashFlow.Domain.Security.Cryptography;
 using CashFlow.Domain.Tokens;
@@ -11,9 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using WebApi.Test.Resources;
 
-
 namespace WebApi.Test;
-
 public class CustomWebApplicationFactory : WebApplicationFactory<Program>
 {
     public ExpenseIdentityManager Expense_Admin { get; private set; } = default!;
