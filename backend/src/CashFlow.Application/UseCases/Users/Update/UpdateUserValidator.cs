@@ -1,0 +1,19 @@
+using CashFlow.Communication.Requests;
+using CashFlow.Exception;
+using FluentValidation;
+
+namespace CashFlow.Application.UseCases.Users.Update;
+
+public class UpdateUserValidator : AbstractValidator<RequestUpdateUserJson>
+{
+    public UpdateUserValidator()
+    {
+        RuleFor(user => user.Name).NotEmpty().WithMessage(ResourceErrorMessages.nameEmpty);
+        RuleFor(user => user.Email)
+            .NotEmpty()
+            .WithMessage(ResourceErrorMessages.emailEmpty)
+            .EmailAddress()
+            .When(user => string.IsNullOrWhiteSpace(user.Email) == false, ApplyConditionTo.CurrentValidator)
+            .WithMessage(ResourceErrorMessages.emailInvalid);
+    }
+}
