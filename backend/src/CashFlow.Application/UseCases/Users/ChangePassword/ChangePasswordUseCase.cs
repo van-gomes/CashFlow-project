@@ -51,7 +51,7 @@ public class ChangePasswordUseCase : IChangePasswordUseCase
 
         if (passwordMatch == false)
         {
-            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.PASSWORD_DIFFERENT_CURRENT_PASSWORD));
+            result.Errors.Add(new ValidationFailure(string.Empty, ResourceErrorMessages.passwordDifferentCurrentPassword));
         }
 
         if (result.IsValid == false)

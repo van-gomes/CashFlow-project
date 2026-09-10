@@ -21,7 +21,7 @@ namespace CashFlow.Exception {
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        public ResourceErrorMessages() {
+        internal ResourceErrorMessages() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -36,7 +36,7 @@ namespace CashFlow.Exception {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static System.Globalization.CultureInfo Culture {
+        internal static System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -44,70 +44,88 @@ namespace CashFlow.Exception {
                 resourceCulture = value;
             }
         }
-        
+
         public static string unknownError {
             get {
                 return ResourceManager.GetString("unknownError", resourceCulture);
             }
         }
-        
+
         public static string titleRequired {
             get {
                 return ResourceManager.GetString("titleRequired", resourceCulture);
             }
         }
-        
+
         public static string paymentTypeInvalid {
             get {
                 return ResourceManager.GetString("paymentTypeInvalid", resourceCulture);
             }
         }
-        
+
         public static string expensesCannotForTheFuture {
             get {
                 return ResourceManager.GetString("expensesCannotForTheFuture", resourceCulture);
             }
         }
-        
+
         public static string amountMustBeGreaterThanZero {
             get {
                 return ResourceManager.GetString("amountMustBeGreaterThanZero", resourceCulture);
             }
         }
-        
+
         public static string expenseNotFound {
             get {
                 return ResourceManager.GetString("expenseNotFound", resourceCulture);
             }
         }
-        
+
         public static string nameEmpty {
             get {
                 return ResourceManager.GetString("nameEmpty", resourceCulture);
             }
         }
-        
+
         public static string emailEmpty {
             get {
                 return ResourceManager.GetString("emailEmpty", resourceCulture);
             }
         }
-        
+
         public static string emailInvalid {
             get {
                 return ResourceManager.GetString("emailInvalid", resourceCulture);
             }
         }
-        
+
         public static string invakidPassword {
             get {
                 return ResourceManager.GetString("invakidPassword", resourceCulture);
             }
         }
-        
+
         public static string emailAlreadyRegistred {
             get {
                 return ResourceManager.GetString("emailAlreadyRegistred", resourceCulture);
+            }
+        }
+
+        public static string emailOrPasswordInvalid {
+            get {
+                return ResourceManager.GetString("emailOrPasswordInvalid", resourceCulture);
+            }
+        }
+
+        public static string passwordDifferentCurrentPassword {
+            get {
+                return ResourceManager.GetString("passwordDifferentCurrentPassword", resourceCulture);
+            }
+        }
+        
+        internal static string tagTypeNotSupported {
+            get {
+                return ResourceManager.GetString("tagTypeNotSupported", resourceCulture);
             }
         }
     }

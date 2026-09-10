@@ -2,8 +2,8 @@ using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
 using CashFlow.Domain.Security.Cryptography;
 using CashFlow.Domain.Tokens;
-using CashFlow.Domain.User;
 using CashFlow.Exception.ExceptionsBase;
+using CashFlow.Domain.Repositories.User;
 
 namespace CashFlow.Application.UseCases.Login.DoLogin;
 

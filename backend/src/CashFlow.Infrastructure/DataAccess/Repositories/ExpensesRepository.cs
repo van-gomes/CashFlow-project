@@ -3,12 +3,16 @@ using CashFlow.Domain.Entities;
 using CashFlow.Domain.Repositories;
 using CashFlow.Domain.Repositories.Expenses;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Query;
 
 namespace CashFlow.Infrastructure.DataAccess.Repositories;
-internal class ExpensesRepository : IExpensesReadOnlyRepository, IExpensesWriteOnlyRepository, IExpensesUpdateOnlyRepository
+
+internal class ExpensesRepository :
+    IExpensesReadOnlyRepository,
+    IExpensesWriteOnlyRepository,
+    IExpensesUpdateOnlyRepository
 {
     private readonly CashFlowDbContext _dbContext;
+
     public ExpensesRepository(CashFlowDbContext dbContext)
     {
         _dbContext = dbContext;
@@ -28,20 +32,27 @@ internal class ExpensesRepository : IExpensesReadOnlyRepository, IExpensesWriteO
 
     public async Task<List<Expense>> GetAll(User user)
     {
-        return await _dbContext.Expenses.AsNoTracking().Where(expense => expense.UserId == user.Id).ToListAsync();
+        return await _dbContext.Expenses
+            .AsNoTracking()
+            .Where(expense => expense.UserId == user.Id)
+            .ToListAsync();
     }
 
     async Task<Expense?> IExpensesReadOnlyRepository.GetById(User user, long id)
     {
         return await GetFullExpense()
             .AsNoTracking()
-            .FirstOrDefaultAsync(expense => expense.Id == id && expense.UserId == user.Id);
+            .FirstOrDefaultAsync(expense =>
+                expense.Id == id &&
+                expense.UserId == user.Id);
     }
 
     async Task<Expense?> IExpensesUpdateOnlyRepository.GetById(User user, long id)
     {
         return await GetFullExpense()
-            .FirstOrDefaultAsync(expense => expense.Id == id && expense.UserId == user.Id);
+            .FirstOrDefaultAsync(expense =>
+                expense.Id == id &&
+                expense.UserId == user.Id);
     }
 
     public void Update(Expense expense)
@@ -51,21 +62,36 @@ internal class ExpensesRepository : IExpensesReadOnlyRepository, IExpensesWriteO
 
     public async Task<List<Expense>> FilterByMonth(User user, DateOnly date)
     {
-        var startDate = new DateTime(year: date.Year, month: date.Month, day: 1).Date;
+        var startDate = new DateTime(
+            year: date.Year,
+            month: date.Month,
+            day: 1).Date;
 
-        var daysInMonth = DateTime.DaysInMonth(year: date.Year, month: date.Month);
-        var endDate = new DateTime(year: date.Year, month: date.Month, day: daysInMonth, hour: 23, minute: 59, second: 59);
+        var daysInMonth = DateTime.DaysInMonth(
+            year: date.Year,
+            month: date.Month);
+
+        var endDate = new DateTime(
+            year: date.Year,
+            month: date.Month,
+            day: daysInMonth,
+            hour: 23,
+            minute: 59,
+            second: 59);
 
         return await _dbContext
             .Expenses
             .AsNoTracking()
-            .Where(expense => expense.UserId == user.Id && expense.Date >= startDate && expense.Date <= endDate)
+            .Where(expense =>
+                expense.UserId == user.Id &&
+                expense.Date >= startDate &&
+                expense.Date <= endDate)
             .OrderBy(expense => expense.Date)
             .ThenBy(expense => expense.Title)
             .ToListAsync();
     }
 
-    private IIncludableQueryable<Expense, ICollection<Tag>> GetFullExpense()
+    private IQueryable<Expense> GetFullExpense()
     {
         return _dbContext.Expenses
             .Include(expense => expense.Tags);

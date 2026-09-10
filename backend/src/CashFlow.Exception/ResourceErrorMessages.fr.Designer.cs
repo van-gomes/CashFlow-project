@@ -110,5 +110,23 @@ namespace CashFlow.Exception {
                 return ResourceManager.GetString("emailAlreadyRegistred", resourceCulture);
             }
         }
+        
+        internal static string emailOrPasswordInvalid {
+            get {
+                return ResourceManager.GetString("emailOrPasswordInvalid", resourceCulture);
+            }
+        }
+        
+        internal static string passwordDifferentCurrentPassword {
+            get {
+                return ResourceManager.GetString("passwordDifferentCurrentPassword", resourceCulture);
+            }
+        }
+        
+        internal static string tagTypeNotSupported {
+            get {
+                return ResourceManager.GetString("tagTypeNotSupported", resourceCulture);
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 using CashFlow.Domain.Enums;
+using Tag = CashFlow.Domain.Entities.Tag;
 
 namespace CashFlow.Domain;
 

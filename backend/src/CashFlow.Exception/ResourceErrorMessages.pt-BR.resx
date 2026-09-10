@@ -51,4 +51,13 @@
     <data name="emailAlreadyRegistred" xml:space="preserve">
         <value>Esse e-mail já está sendo usado</value>
     </data>
+    <data name="emailOrPasswordInvalid" xml:space="preserve">
+        <value>E-mail e/ou senha inválidos.</value>
+    </data>
+    <data name="passwordDifferentCurrentPassword" xml:space="preserve">
+        <value>A nova senha deve ser diferente da senha atual.</value>
+    </data>
+    <data name="tagTypeNotSupported" xml:space="preserve">
+        <value>Tipo de tag não suportado.</value>
+    </data>
 </root>
