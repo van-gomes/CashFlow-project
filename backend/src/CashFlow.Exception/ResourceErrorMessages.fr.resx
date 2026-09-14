@@ -58,6 +58,6 @@
         <value>Le nouveau mot de passe doit être différent du mot de passe actuel.</value>
     </data>
     <data name="tagTypeNotSupported" xml:space="preserve">
-        <value>Type de balise non pris en charge.</value>
+        <value>Étiquette non supportée</value>
     </data>
 </root>

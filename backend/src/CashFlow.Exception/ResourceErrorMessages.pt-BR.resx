@@ -58,6 +58,6 @@
         <value>A nova senha deve ser diferente da senha atual.</value>
     </data>
     <data name="tagTypeNotSupported" xml:space="preserve">
-        <value>Tipo de tag não suportado.</value>
+        <value>Tag não suportada</value>
     </data>
 </root>

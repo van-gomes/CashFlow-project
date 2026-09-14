@@ -58,6 +58,6 @@
         <value>A nova palavra-passe deve ser diferente da palavra-passe atual.</value>
     </data>
     <data name="tagTypeNotSupported" xml:space="preserve">
-        <value>Tipo de etiqueta não suportado.</value>
+        <value>Etiqueta não suportada</value>
     </data>
 </root>

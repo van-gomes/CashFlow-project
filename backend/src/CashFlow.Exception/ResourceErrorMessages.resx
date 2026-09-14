@@ -58,6 +58,6 @@
         <value>The new password must be different from the current password.</value>
     </data>
     <data name="tagTypeNotSupported" xml:space="preserve">
-        <value>Unsupported tag type.</value>
+        <value>Unsupported tag</value>
     </data>
 </root>
