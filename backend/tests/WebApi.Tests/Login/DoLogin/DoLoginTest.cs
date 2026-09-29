@@ -60,7 +60,7 @@ public class DoLoginTest : CashFlowClassFixture
 
         var errors = responseData.RootElement.GetProperty("errorMessages").EnumerateArray();
 
-        var expectedMessage = ResourceErrorMessages.ResourceManager.GetString("EMAIL_OR_PASSWORD_INVALID", new CultureInfo(culture));
+        var expectedMessage = ResourceErrorMessages.ResourceManager.GetString("emailOrPasswordInvalid", new CultureInfo(culture));
 
         errors.Should().HaveCount(1).And.Contain(c => c.GetString()!.Equals(expectedMessage));
     }

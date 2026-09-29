@@ -41,7 +41,7 @@ public class DoLoginUseCaseTest
 
         var result = await act.Should().ThrowAsync<InvalidLoginException>();
 
-        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.EMAIL_OR_PASSWORD_INVALID));
+        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.emailOrPasswordInvalid));
     }
 
     [Fact]
@@ -58,7 +58,7 @@ public class DoLoginUseCaseTest
 
         var result = await act.Should().ThrowAsync<InvalidLoginException>();
 
-        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.EMAIL_OR_PASSWORD_INVALID));
+        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.emailOrPasswordInvalid));
     }
     
     private DoLoginUseCase CreateUseCase(CashFlow.Domain.Entities.User user, string? password = null)

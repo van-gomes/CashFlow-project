@@ -2,6 +2,7 @@ using System.Globalization;
 using System.Net;
 using System.Text.Json;
 using CashFlow.Exception;
+using CommonTestUtilities.Requests;
 using FluentAssertions;
 using WebApi.Test.InlineData;
 

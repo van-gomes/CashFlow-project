@@ -41,7 +41,7 @@ public class UpdateUserUseCaseTest
 
         var result = await act.Should().ThrowAsync<ErrorOnValidationException>();
 
-        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.NAME_EMPTY));
+        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.nameEmpty));
     }
 
     [Fact]

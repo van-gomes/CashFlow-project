@@ -64,7 +64,7 @@ public class ChangePasswordTest : CashFlowClassFixture
 
         var errors = responseData.RootElement.GetProperty("errorMessages").EnumerateArray();
 
-        var expectedMessage = ResourceErrorMessages.ResourceManager.GetString("PASSWORD_DIFFERENT_CURRENT_PASSWORD", new CultureInfo(culture));
+        var expectedMessage = ResourceErrorMessages.ResourceManager.GetString("passwordDifferentCurrentPassword", new CultureInfo(culture));
 
         errors.Should().HaveCount(1).And.Contain(c => c.GetString()!.Equals(expectedMessage));
     }

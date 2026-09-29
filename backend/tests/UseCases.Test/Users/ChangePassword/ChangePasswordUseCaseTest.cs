@@ -58,7 +58,7 @@ public class ChangePasswordUseCaseTest
         var result = await act.Should().ThrowAsync<ErrorOnValidationException>();
         
         result.Where(e => e.GetErrors().Count == 1 &&
-                e.GetErrors().Contains(ResourceErrorMessages.PASSWORD_DIFFERENT_CURRENT_PASSWORD));
+                e.GetErrors().Contains(ResourceErrorMessages.passwordDifferentCurrentPassword));
     }
 
     private static ChangePasswordUseCase CreateUseCase(User user, string? password = null)

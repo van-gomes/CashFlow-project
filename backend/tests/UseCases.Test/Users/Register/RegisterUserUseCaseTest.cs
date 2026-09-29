@@ -36,7 +36,7 @@ public class RegisterUserUseCaseTest
 
         var result = await act.Should().ThrowAsync<ErrorOnValidationException>();
 
-        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.NAME_EMPTY));
+        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.nameEmpty));
     }
 
     [Fact]
@@ -50,7 +50,7 @@ public class RegisterUserUseCaseTest
 
         var result = await act.Should().ThrowAsync<ErrorOnValidationException>();
 
-        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.EMAIL_ALREADY_REGISTERED));
+        result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.emailAlreadyRegistred));
     }
 
     private RegisterUserUseCase CreateUseCase(string? email = null)
