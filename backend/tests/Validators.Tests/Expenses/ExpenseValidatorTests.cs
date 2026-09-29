@@ -5,8 +5,7 @@ using CommonTestUtilities.Requests;
 using FluentAssertions;
 using Xunit;
 
-namespace Validators.Tests.Expenses.Register;
-
+namespace Validators.Tests.Expenses;
 public class ExpenseValidatorTests
 {
     [Fact]
@@ -23,7 +22,7 @@ public class ExpenseValidatorTests
         result.IsValid.Should().BeTrue();
     }
 
-    [Xunit.Theory]
+    [Theory]
     [InlineData("")]
     [InlineData("         ")]
     [InlineData(null)]
@@ -74,7 +73,7 @@ public class ExpenseValidatorTests
         result.Errors.Should().ContainSingle().And.Contain(e => e.ErrorMessage.Equals(ResourceErrorMessages.paymentTypeInvalid));
     }
 
-    [Xunit.Theory]
+    [Theory]
     [InlineData(0)]
     [InlineData(-1)]
     [InlineData(-2)]
@@ -92,5 +91,21 @@ public class ExpenseValidatorTests
         //Assert
         result.IsValid.Should().BeFalse();
         result.Errors.Should().ContainSingle().And.Contain(e => e.ErrorMessage.Equals(ResourceErrorMessages.amountMustBeGreaterThanZero));
+    }
+
+    [Fact]
+    public void Error_Tag_Invalid()
+    {
+        //Arrange
+        var validator = new ExpenseValidator();
+        var request = RequestExpenseJsonBuilder.Build();
+        request.Tags.Add((Tag)1000);
+
+        //Act
+        var result = validator.Validate(request);
+
+        //Assert
+        result.IsValid.Should().BeFalse();
+        result.Errors.Should().ContainSingle().And.Contain(e => e.ErrorMessage.Equals(ResourceErrorMessages.tagTypeNotSupported));
     }
 }

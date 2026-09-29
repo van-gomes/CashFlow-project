@@ -1,70 +1,63 @@
-using CashFlow.Application.UseCases.Expenses.GetById;
-using CashFlow.Domain;
-using CashFlow.Domain.Entities;
+using CashFlow.Communication.Enums;
 using CashFlow.Exception;
-using CashFlow.Exception.ExceptionsBase;
-using CommonTestUtilities.Entities;
-using CommonTestUtilities.LoggedUser;
-using CommonTestUtilities.Mapper;
-using CommonTestUtilities.Repositories;
 using FluentAssertions;
+using System.Globalization;
+using System.Net;
+using System.Text.Json;
+using WebApi.Test.InlineData;
 
 namespace WebApi.Test.Expenses.GetById;
-
-public class GetExpenseByIdTest
+public class GetExpenseByIdTest : CashFlowClassFixture
 {
+    private const string METHOD = "api/Expenses";
+
+    private readonly string _token;
+    private readonly long _expenseId;
+
+    public GetExpenseByIdTest(CustomWebApplicationFactory webApplicationFactory) : base(webApplicationFactory)
+    {
+        _token = webApplicationFactory.User_Team_Member.GetToken();
+        _expenseId = webApplicationFactory.Expense_MemberTeam.GetId();
+    }
+
     [Fact]
     public async Task Success()
     {
-        var loggedUser = UserBuilder.Build();
-        var expense = ExpenseBuilder.Build(loggedUser);
+        var result = await DoGet(requestUri: $"{METHOD}/{_expenseId}", token: _token);
 
-        var useCase = CreateUseCase(loggedUser, expense);
+        result.StatusCode.Should().Be(HttpStatusCode.OK);
 
-        var result = await useCase.Execute(expense.Id);
+        var body = await result.Content.ReadAsStreamAsync();
 
-        result.Should().NotBeNull();
-        result.Id.Should().Be(expense.Id);
-        result.Title.Should().Be(expense.Title);
-        result.Description.Should().Be(expense.Description);
-        result.Date.Should().Be(expense.Date);
-        result.Amount.Should().Be(expense.Amount);
-        result.PaymentType.Should().Be(
-            (CashFlow.Communication.Enums.PaymentType)expense.PaymentType);
+        var response = await JsonDocument.ParseAsync(body);
+
+        response.RootElement.GetProperty("id").GetInt64().Should().Be(_expenseId);
+        response.RootElement.GetProperty("title").GetString().Should().NotBeNullOrWhiteSpace();
+        response.RootElement.GetProperty("description").GetString().Should().NotBeNullOrWhiteSpace();
+        response.RootElement.GetProperty("date").GetDateTime().Should().NotBeAfter(DateTime.Today);
+        response.RootElement.GetProperty("amount").GetDecimal().Should().BeGreaterThan(0);
+        response.RootElement.GetProperty("tags").EnumerateArray().Should().NotBeNullOrEmpty();
+
+        var paymentType = response.RootElement.GetProperty("paymentType").GetInt32();
+        Enum.IsDefined(typeof(PaymentType), paymentType).Should().BeTrue();
     }
-    
-    [Fact]
-    public async Task Error_Expense_Not_Found()
+
+    [Theory]
+    [ClassData(typeof(CultureInlineDataTest))]
+    public async Task Error_Expense_Not_Found(string culture)
     {
-        var loggedUser = UserBuilder.Build();
+        var result = await DoGet(requestUri: $"{METHOD}/1000", token: _token, culture: culture);
 
-        var useCase = CreateUseCase(loggedUser);
+        result.StatusCode.Should().Be(HttpStatusCode.NotFound);
 
-        var act = async () => await useCase.Execute(id: 1000);
+        var body = await result.Content.ReadAsStreamAsync();
 
-        var result = await act.Should()
-            .ThrowAsync<NotFoundException>();
+        var response = await JsonDocument.ParseAsync(body);
 
-        result.Where(ex => ex.GetErrors().Count == 1
-                           && ex.GetErrors().Contains(
-                               ResourceErrorMessages.expenseNotFound));
-    }
-    
-    private GetExpenseByIdUseCase CreateUseCase(
-        User user,
-        Expense? expense = null)
-    {
-        var repository = new ExpensesReadOnlyRepositoryBuilder()
-            .GetById(user, expense)
-            .Build();
+        var errors = response.RootElement.GetProperty("errorMessages").EnumerateArray();
 
-        var mapper = MapperBuilder.Build();
+        var expectedMessage = ResourceErrorMessages.ResourceManager.GetString("expenseNotFound", new CultureInfo(culture));
 
-        var loggedUser = LoggedUserBuilder.Build(user);
-
-        return new GetExpenseByIdUseCase(
-            repository,
-            mapper,
-            loggedUser);
+        errors.Should().HaveCount(1).And.Contain(error => error.GetString()!.Equals(expectedMessage));
     }
 }
