@@ -1,9 +1,9 @@
+using System.Globalization;
+using FluentAssertions;
 using System.Net;
 using System.Net.Mime;
-using FluentAssertions;
 
 namespace WebApi.Test.Expenses.Reports;
-
 public class GenerateExpensesReportTest : CashFlowClassFixture
 {
     private const string METHOD = "api/Report";
@@ -22,23 +22,37 @@ public class GenerateExpensesReportTest : CashFlowClassFixture
     [Fact]
     public async Task Success_Pdf()
     {
-        var result = await DoGet(requestUri: $"{METHOD}/pdf?month={_expenseDate:Y}", token: _adminToken);
+        var month = _expenseDate.ToString(
+            "yyyy-MM-dd",
+            CultureInfo.InvariantCulture);
+
+        var result = await DoGet(
+            requestUri: $"{METHOD}/pdf?month={month}",
+            token: _adminToken);
 
         result.StatusCode.Should().Be(HttpStatusCode.OK);
 
         result.Content.Headers.ContentType.Should().NotBeNull();
-        result.Content.Headers.ContentType!.MediaType.Should().Be(MediaTypeNames.Application.Pdf);
+        result.Content.Headers.ContentType!.MediaType
+            .Should().Be(MediaTypeNames.Application.Pdf);
     }
 
     [Fact]
     public async Task Success_Excel()
     {
-        var result = await DoGet(requestUri: $"{METHOD}/excel?month={_expenseDate:Y}", token: _adminToken);
+        var month = _expenseDate.ToString(
+            "yyyy-MM-dd",
+            CultureInfo.InvariantCulture);
+
+        var result = await DoGet(
+            requestUri: $"{METHOD}/excel?month={month}",
+            token: _adminToken);
 
         result.StatusCode.Should().Be(HttpStatusCode.OK);
 
         result.Content.Headers.ContentType.Should().NotBeNull();
-        result.Content.Headers.ContentType!.MediaType.Should().Be(MediaTypeNames.Application.Octet);
+        result.Content.Headers.ContentType!.MediaType
+            .Should().Be(MediaTypeNames.Application.Octet);
     }
 
     [Fact]
