@@ -19,8 +19,8 @@ public class ChangePasswordValidatorTest
 
         result.IsValid.Should().BeTrue();
     }
-
-    [NUnit.Framework.Theory]
+    
+    [Theory]
     [InlineData("")]
     [InlineData("    ")]
     [InlineData(null)]

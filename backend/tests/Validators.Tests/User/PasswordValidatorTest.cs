@@ -8,7 +8,7 @@ namespace Validators.Tests.User;
 
 public class PasswordValidatorTest
 {
-    [NUnit.Framework.Theory]
+    [Theory]
     [InlineData("")]
     [InlineData("      ")]
     [InlineData(null)]
